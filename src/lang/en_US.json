@@ -1,0 +1,52 @@
+{
+
+  "general.text.or":"OR",
+
+  "login.welcome": "Welcome back! Sign in",
+  "login.required.field":"This field is required",
+  "login.email":"Email",
+  "login.password": "Password",
+  "login.btn.text":"Login",
+  "login.google.signin":"Sign in with Google",
+  "login.forgot.password":"Forgot password?",
+
+  "password.confirmation":"Confirmation",
+  "password.confirmation.successful":"Successful",
+  "password.confirmation.message":"You can now use this email to login. We promise we won’t spam your email",
+  "password.confirmation.signin":"Sign in",
+
+  "forgot.password":"Forgot password",
+  "forgot.password.email":"Email",
+  "forgot.password.send.verification":"Send Verification code",
+  "forgot.password.remember.account":"Do you remember your account?",
+  "forgot.password.signin":"Sign in",
+  "forgot.password.successful":"Successful",
+  "forgot.password.reset.link":" We sent a reset password link to  ",
+  "forgot.password.follow.link":" Please follow the link on the email",
+
+  "register.create.account.label" : "Create an account",
+  "register.required.field":"This field is required",
+  "register.full.name": "Full name",
+  "register.email.required": "Email is required",
+  "register.email.invalid":"Invalid email address",
+  "register.email":"Email",
+  "register.password":"Password",
+  "register.confirm.password.placeholder":"Confirm Password",
+  "register.confirm.password":"Please confirm your password!",
+  "register.password.dont.match": "The two passwords that you entered do not match!",
+  "register.create.account.btn":"Create Account",
+
+  "reset.password.title":"Reset your password",
+  "reset.password.required.field":"This field is required",
+  "reset.password.new.password":"New Password",
+  "reset.password.confirm.password.placeholder":"Confirm Password",
+  "reset.password.btn":"Reset Password",
+  "reset.password.success.label":"Success",
+  "reset.password.success.message":"Your password have been reset successfully. You can now sign in with your new password.",
+  "reset.password.signin":"Sign in"
+
+
+
+
+
+}
