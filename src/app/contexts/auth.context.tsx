@@ -1,5 +1,5 @@
 import jwtDecode from 'jwt-decode';
-import React, { createContext, useEffect, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { constants } from '../lib/constants/global.constants';
 import { AuthState } from '../lib/models/auth-state';

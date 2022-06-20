@@ -1,7 +1,11 @@
-import React from "react";
+import ReturnArchiveCard from "./ReturnArchiveCard";
 
 function HomePage() {
-  return <div>HomePage</div>;
+  return <>
+    <div className="card-container">
+      <ReturnArchiveCard />
+    </div>
+  </>;
 }
 
 export default HomePage;

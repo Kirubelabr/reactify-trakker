@@ -1,6 +1,6 @@
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 import { Button, Form, Input } from 'antd';
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/auth.context';
@@ -55,6 +55,8 @@ function SignInPage() {
               data?.expiresIn * 1000
             ).toString(),
           });
+          console.log("authContext", authContext);
+
           navigate('/home', { replace: true });
         },
         (error: any) => {
@@ -187,7 +189,7 @@ function SignInPage() {
                 </div>
 
               </div>
-              <div className='form-footer'>
+              <div className='form-footer mt-4'>
                 <p>Don't have an account yet? <span className='external-link'>
                   <a href="mailto:kirubelabr@gmail.com"
                     target="_blank"

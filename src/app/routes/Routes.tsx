@@ -4,6 +4,7 @@ import {
   Route,
   Routes
 } from "react-router-dom";
+import PageLayout from "../components/PageLayout";
 import { AuthContext } from "../contexts/auth.context";
 import HomePage from "../features/home/HomePage";
 import SignInPage from "../features/user-management/signIn/SignInPage";
@@ -42,7 +43,7 @@ function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Navigate to={'/home'} />} />
-      <Route path="home" element={<AuthenticatedRoute component={<HomePage />} />} />
+      <Route path="home" element={<AuthenticatedRoute component={<PageLayout title="Dashboard" component={<HomePage />} />} />} />
       <Route path="sign-in" element={<SignInPage />} />
     </Routes>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { IntlProvider } from 'react-intl';
 import { BrowserRouter } from 'react-router-dom';
 import App from './app/App';
@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import './styles/index.scss';
 
 const localStorageEnv = localStorage.getItem('env');
-// const env = localStorageEnv ? JSON.parse(localStorageEnv ?? '{}') : {};
+const env = localStorageEnv ? JSON.parse(localStorageEnv ?? '{}') : {};
 
 const locale = navigator.language;
 
@@ -16,7 +16,9 @@ const languages = {
   en_US: locale_en,
 };
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+
+root.render(
   <React.StrictMode>
     <BrowserRouter>
       <IntlProvider
@@ -27,7 +29,6 @@ ReactDOM.render(
       </IntlProvider>
     </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
